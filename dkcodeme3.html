@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="dkcodeme3.css">
+</head>
+<body>
+
+    <div class="maindiv">
+        <nav class="nav">
+            <div class="nav__logo">DkCode</div>
+            <div class="nav__hamburger">
+                <span class="nav__hamburger__line"></span>
+                <span class="nav__hamburger__line"></span>
+                <span class="nav__hamburger__line"></span>
+            </div>
+            <div class="nav__menu">
+                <ul>
+                    <li class="nav__menu__link"><a href="index.html">Home</a></li>
+                    <li class="nav__menu__link"><a href="dkcodeme2.html">cs50Me</a></li>
+                    <li class="nav__menu__link"><a href="dkcodeme3.html">TechMe</a></li>
+                    
+                </ul>
+            </div>
+        </nav>
+    </div>
+    
+    <br><br>
+    
+    <script>
+
+        const hamburger = document.querySelector(".nav__hamburger");
+        const navMenu = document.querySelector(".nav__menu");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        });
+
+    </script>
+
+
+   
+
+
+
+    <div class="image-row">
+        <img src="images/TensorFlow_logo.svg.png" alt="tf">
+        <img src="images/download (1).png" alt="python">
+    </div>
+
+    <br><br>
+    <div class="image-row">
+        <img src="images/148317495.png" alt="linux">
+        <img src="images/download.jpeg" alt="vs">
+    </div>
+
+    <br>
+
+    <div class="image-row">
+        <img src="images/download (3).png" alt="gpt">
+        <img src="images/download.png" alt="google">
+    </div>
+
+    <br>
+    
+    <div class="image-row">
+        <img src="images/download (1).jpeg" alt="youtube">
+        
+    </div>
+
+    <br>
+
+    <div class="image-row">
+        <img src="images/332926026_8839187282822982_7674830938355777980_n.jpg" alt="github">
+        
+    </div>
+    
+
+    <div  class="bottomrow">
+        <a href="https://www.youtube.com/channel/UCEGisb3xpJ6SS6VCKs9ZT6A">YouTube</a>
+        <a href="linkedin.com/in/dk-dushan-75795931a">Linked_in</a>
+        <a href="www.instagram.com/dk_code_">Insta</a>
+    </div>
+
+</body>

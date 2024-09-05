@@ -1,0 +1,266 @@
+
+
+<html lang="en">
+<head>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="dkcodeme.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DkCodeMe</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+<script>
+       
+
+        
+    // JavaScript to adjust image size based on screen width
+    function adjustImageSize() {
+        var image = document.getElementById('aiimage');
+        if (window.innerWidth >= 992) { // Large screens
+            image.style.width = '700px';
+            image.style.height = '360px';
+        } else { // Small screens
+            image.style.width = '100%';
+        }
+    }
+
+    // Adjust image size initially and on window resize
+    adjustImageSize();
+    window.addEventListener('resize', adjustImageSize);
+
+    function adjustImageSize() {
+        var images = document.querySelectorAll('.image-wrapper img');
+        if (window.innerWidth < 768) {
+            images.forEach(function(img) {
+                img.style.height = '150px';
+                img.style.width = '200px';
+            });
+        } else {
+            images.forEach(function(img) {
+                img.style.height = '250px';
+                img.style.width = '300px';
+            });
+        }
+    }
+
+    window.onload = adjustImageSize;
+    window.onresize = adjustImageSize;
+
+
+    
+
+</script> 
+
+   
+
+</head>
+<body>
+    
+    <!---->
+    <div class="maindiv">
+        <nav class="nav">
+            <div class="nav__logo">DkCode</div>
+            <a href="#" class="nav__hamburger">
+                <span class="nav__hamburger__line"></span>
+                <span class="nav__hamburger__line"></span>
+                <span class="nav__hamburger__line"></span>
+            </a>
+            <div class="nav__menu">
+                <ul>
+                    <li class="nav__menu__link"><a href="#">Home</a></li>
+                    <li class="nav__menu__link"><a href="dkcodeme2.html">cs50Me</a></li>
+                    <li class="nav__menu__link"><a href="dkcodeme3.html">TechMe</a></li>
+                    
+                </ul>
+            </div>
+        </nav>
+        <img id="image" src="images/8.photo-1542435503-956c469947f6.jpg" alt="background-image">
+        <div class="overlay"></div>
+        <p id="name">DkCode;</p>
+        <p id="mainp"><strong>Im Just Coding innit ;</strong></p>
+        <!--
+        <button class="btn-git">
+            <a href="https://github.com/DkCodeProjct" id="github">I'm on GitHub</a>
+        </button>-->
+        <button class="btn-git" onclick="window.location.href='https://github.com/DkCodeProjct'" id="github">I'm on GitHub</button>
+    </div> 
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        const hamburger = document.querySelector(".nav__hamburger");
+        const linksContainer = document.querySelector(".nav__menu");
+        const links = document.querySelectorAll(".nav__menu__link");
+
+        hamburger.addEventListener("click", () => {
+            linksContainer.classList.toggle("active");
+            hamburger.classList.toggle("active");
+        });
+
+        window.addEventListener("resize", () => {
+            if (window.matchMedia("(max-width: 550px)").matches) {
+                closeMenu();
+            }
+        });
+
+        if (window.matchMedia("(max-width: 550px)").matches) {
+            closeMenu();
+        }
+
+        function closeMenu() {
+            links.forEach((link) => {
+                link.addEventListener("click", () => {
+                    linksContainer.classList.remove("active");
+                    hamburger.classList.remove("active");
+                });
+            });
+        }
+    </script>
+
+    <br>
+    <br>
+    <br>
+   
+   
+ 
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <img id="aiimage" src="images/cs50ai-e1589908343841-1024x478.png" alt="ai-image">
+        </div>
+    </div>
+
+    <br>
+   
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-md-6">
+                <ul class="custom-bullets" id="ul">Pain of Learning NLP / LLM / NN is not Painful.
+                    <li class="pwords">The root of Desire in Psychoanalysis.</li>
+                    <li class="pwords">That's the Brith of Desire for AI.</li>
+                    <li class="pwords">Try to make Some Contribution.</li>
+                    <li class="pwords">Hopefully CODING will help me escape from reality;</li>
+                    import tensorflow as tf
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    <br>
+    
+    
+    <hr class="solid">
+
+    <div class="center-div">
+        <h3 class="head-imgs">Thinkers That Passionate Me. </h3>
+        <p class="img-ps">More into the West, not the East.</p>
+    </div>
+    
+
+    
+
+    
+    
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+           
+            <div class="image-wrapper">
+              
+                <img id="topimage" src="images/images.jpeg" alt="slavoj-zizek">
+                <p class="image-text">You talk all the time not to archive something, but to make sure nothing will happen.</p>
+                
+            </div>
+        </div>
+
+        <br>
+
+        <div class="col-md-4">
+            <div class="image-wrapper">
+                <img id="topimage1" src="images/jl.jpg" alt="jaques-lacan">
+                <p class="image-text">The I is always in the field of the other.</p>
+                
+            </div>
+        </div>
+
+        <br>
+
+        <div class="col-md-4">
+            <div class="image-wrapper">
+                <img id="topimage2" src="images/Sigmund_Freud,_by_Max_Halberstadt_(cropped).jpg" alt="sigmund-frued">
+                <p class="image-text">Unexpressed emotions never die; they are buried alive and will come forth later in uglier ways.</p>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="col-md-4">
+            <div class="image-wrapper">
+                <img id="topimage2" src="images/img-david-lynch-01-184117216071-750x1000.jpg!Portrait.jpg" alt="David Lyinch">
+                <p class="image-text">Mulholland Dr.(ive).</p>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="col-md-4">
+            <div class="image-wrapper">
+                <img id="topimage2" src="images/6782250376_01556df95e_o1.jpg" alt="Deepthi">
+                <p class="image-text">Beginning of my space time...</p>
+            </div>
+        </div>
+
+
+
+        <br>
+
+        <div class="col-md-4">
+            <div class="image-wrapper">
+                <img id="topimage1" src="images/Screenshot from 2024-09-01 17-29-34.png" alt="Atheism">
+                <p class="image-text">Where there is Religion, there is ``Poverty``..../</p>
+                
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <br><br>
+
+    <div class="image-row">
+        <div class="image-container">
+            <img src="images/me_new.jpg" alt="Andrej">
+            
+        </div>
+        <div class="image-container">
+            <img src="images/1715183003866.jpeg" alt="demmis">
+            
+        </div>
+    </div>
+
+
+
+
+
+</div>
+
+    <br>
+    <br>
+    <br>
+    
+    <div  class="bottomrow">
+        <a href="https://www.youtube.com/channel/UCEGisb3xpJ6SS6VCKs9ZT6A">YouTube</a>
+        <a href="linkedin.com/in/dk-dushan-75795931a">Linked_in</a>
+        <a href="www.instagram.com/dk_code_">Insta</a>
+    </div>
+    
+</body>
+</html>
